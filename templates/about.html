@@ -8,33 +8,88 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
+    <!-- Custom CSS -->
+    <style>
+      body {
+        background-color: #f8f9fa;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+      .navbar {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        margin-top: 40px;
+        font-size: 2.5rem;
+        color: #343a40;
+      }
+      p {
+        color: #6c757d;
+        font-size: 1.1rem;
+      }
+      .content-section {
+        padding: 30px 15px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        max-width: 800px;
+        margin: auto;
+      }
+      .btn-outline-success {
+        border-color: #28a745;
+        color: #28a745;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .btn-outline-success:hover {
+        background-color: #28a745;
+        color: white;
+      }
+      footer {
+        margin-top: 50px;
+        padding: 20px;
+        text-align: center;
+        /* background-color: #343a40;
+        color: white; */
+      }
+    </style>
+
     <title>Text Utils</title>
   </head>
   <body>
    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-  <a class="navbar-brand" href="#">Text Utils</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-    <div class="navbar-nav">
-      <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
-      <a class="nav-link" href='about'>About</a>
+      <a class="navbar-brand" href="#">Text Utils</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link active" href="/">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="about">About</a>
+        </div>
+      </div>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+
+    <div class="container">
+      <div class="content-section text-center">
+        <h1>About this page</h1>
+        <p>This page provides some basic transformations to your text.</p>
+        <p>You can perform the following actions:</p>
+        <ul class="list-unstyled">
+          <li>✅ Remove Punctuations</li>
+          <li>✅ Capitalize each character</li>
+          <li>✅ Remove new lines</li>
+          <li>✅ Remove extra spaces</li>
+        </ul>
+      </div>
     </div>
-  </div>
-       <a class="navbar-brand"></a>
-  <form class="form-inline">
-    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-  </form>
-</nav>
-<h1 class="text-center" >About this page</h1>
-   <p class="text-center" >This page provides some basic transformation to your text.</p>
-   <p class="text-center" >You can perform following actions :-</p>
-   <p class="text-center" >Remove Punctuations</p>
-   <p class="text-center" >Capitalize each character</p>
-   <p class="text-center" >Remove new lines</p>
-   <p class="text-center" >Remove extra spaces</p>
+
+    <footer>
+      © 2024 Text Utils | All rights reserved
+    </footer>
+
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
