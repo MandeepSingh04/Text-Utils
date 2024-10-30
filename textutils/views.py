@@ -40,10 +40,10 @@ def analyze(request):
     if extraspaceremover == 'on':
         analyzed = ""
         for i, char in enumerate(mytext):
-            if not (mytext[i] == " " and mytext[i + 1] == " "):
+            if not (i+1<len(mytext) and mytext[i] == " " and mytext[i + 1] == " "):
                 analyzed = analyzed + char
         mytext = analyzed
-
+        
     if removepunc == 'off' and fullcaps == 'off' and newlineremover == 'off' and extraspaceremover == 'off':
         params = {'analyzed_text': mytext}
         return render(request, 'analyze2.html', params)
